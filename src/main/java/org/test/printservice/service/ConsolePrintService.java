@@ -14,4 +14,11 @@ public class ConsolePrintService implements PrintService {
         logger.info(content);
     }
 
+    public boolean verifySuitability(int inta, int intb)
+    {
+        boolean ret = false;
+        int result = inta + intb;
+        logger.info("*** Verify Suitability Result is: " + result);
+        return ret;
+    }
 }
