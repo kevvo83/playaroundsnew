@@ -7,10 +7,12 @@ public class Course {
 
     private int courseId;
     private String courseDescriptor;
+    private String courseConductor;
 
-    public Course(int courseId, String courseDescriptor) {
-        this.courseId = courseId;
+    public Course(String courseDescriptor, String courseConductor) {
+        this.courseConductor = courseConductor;
         this.courseDescriptor = courseDescriptor;
+        this.courseId = 0;
     }
 
     public int getCourseId() {
@@ -29,11 +31,11 @@ public class Course {
         this.courseDescriptor = courseDescriptor;
     }
 
-    @Override
-    public String toString() {
-        return "Course{" +
-                "courseId=" + courseId +
-                ", courseDescriptor='" + courseDescriptor + '\'' +
-                '}';
+    public String getCourseConductor() {
+        return courseConductor;
+    }
+
+    public void setCourseConductor(String courseConductor) {
+        this.courseConductor = courseConductor;
     }
 }

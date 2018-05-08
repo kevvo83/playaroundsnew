@@ -13,6 +13,7 @@ public class StudentService {
 
     public boolean registerNewStudent (Student stud)
     {
+        stud.setStudentid(studentsList.size());
         studentsList.add(stud);
         return true;
     }

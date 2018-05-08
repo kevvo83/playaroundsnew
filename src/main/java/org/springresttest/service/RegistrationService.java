@@ -13,9 +13,6 @@ public class RegistrationService {
 
     private static HashMap<Integer, Integer> studentCourseRegistration = new HashMap<Integer, Integer>();
 
-    @Autowired
-    public RegistrationService rs;
-
     public boolean registerStudentinCourse(Student stud, Course course) {
         studentCourseRegistration.put(Integer.valueOf(stud.getStudentid()), Integer.valueOf(course.getCourseId()));
         return true;

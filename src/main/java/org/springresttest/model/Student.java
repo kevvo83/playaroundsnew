@@ -7,10 +7,10 @@ public class Student extends Person {
 
     private int studentid;
 
-    public Student (String firstname, String lastname, int age, int studid)
+    public Student (String firstname, String lastname, int age)
     {
         super(firstname, lastname, age);
-        studentid = studid;
+        studentid = 0;
     }
 
     public Student()

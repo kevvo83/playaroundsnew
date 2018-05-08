@@ -29,13 +29,5 @@ public class Application {
     public void run (String... strings) throws Exception
     {
         log.info("Inserting new Customer into Table");
-
-        jdbctemplate.execute("DROP TABLE CUSTOMERS_DETAILS IF EXISTS");
-        jdbctemplate.execute("CREATE TABLE CUSTOMERS_DETAILS (ID SERIAL, NAME VARCHAR(255))");
-
-        List<String> userNamesList = Arrays.asList("John Smith", "Jon Snow", "Harry Kane", "Thierry Henry", "Arsene Wenger").stream().map().collect(Collectors.toList());
-        for (String name: userNamesList){
-            System.out.println(name);
-        }
     }
 }

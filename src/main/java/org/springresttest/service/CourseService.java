@@ -12,7 +12,8 @@ public class CourseService {
     private static ArrayList<Course> courseList = new ArrayList<Course>();
 
     public boolean addNewCourse(Course crs) {
-        for (Course i:courseList) { if ((i.getCourseDescriptor()==crs.getCourseDescriptor()) && (i.getCourseId()==crs.getCourseId())) {return false;} }
+        for (Course i:courseList) { if ((i.getCourseDescriptor()==crs.getCourseDescriptor()) && (i.getCourseConductor()==crs.getCourseConductor())) {return false;} }
+        crs.setCourseId(courseList.size());
         courseList.add(crs); return true;
     }
 
