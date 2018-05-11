@@ -1,6 +1,7 @@
 package org.springresttest.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springresttest.model.Course;
 import org.springresttest.model.Student;
@@ -26,6 +27,13 @@ public class StudentService {
     {
         Student retVal = null;
         for (Student i:studentsList)  {  if (i.getStudentid() == studentid) {retVal = i; break; } }
+        return retVal;
+    }
+
+    public Student getStudentDetails(String firstName, String lastName)
+    {
+        Student retVal = null;
+        for (Student i:studentsList) { if ((i.getFirstname() == firstName) && (i.getLastname() == lastName)){retVal=i; break;} }
         return retVal;
     }
 

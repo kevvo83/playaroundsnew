@@ -33,7 +33,7 @@ public class DirectoryControllerTest {
 
         try {
             MvcResult result = mockMvc.perform(requestBuilder).andReturn();
-            Assert.assertEquals("{\"firstname\":\"Jon\",\"lastname\":\"Snow\",\"age\":23,\"studentid\":0}", result.getResponse().getContentAsString());
+            Assert.assertEquals("{\"firstname\":\"Per\",\"lastname\":\"Mertesacker\",\"age\":33,\"studentid\":0}", result.getResponse().getContentAsString());
         } catch (Exception exp) {
             Assert.fail(exp.getMessage());
         }

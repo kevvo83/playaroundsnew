@@ -1,10 +1,11 @@
 package org.springresttest.model;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 
-@Component
+
 public class Tutor extends Person {
 
     private int tutorid;

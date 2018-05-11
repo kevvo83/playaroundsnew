@@ -1,10 +1,10 @@
 package org.springresttest.model;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 
-@Component
 public abstract class Person {
     private String firstname="";
     private String lastname="";

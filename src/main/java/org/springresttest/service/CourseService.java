@@ -1,6 +1,7 @@
 package org.springresttest.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springresttest.model.Course;
 
@@ -26,6 +27,13 @@ public class CourseService {
     {
         Course retVal = null;
         for (Course i:courseList) { if (i.getCourseId()==courseId){retVal=i;break; } }
+        return retVal;
+    }
+
+    public Course getCourseDetails(String courseName)
+    {
+        Course retVal=null;
+        for (Course i:courseList) { if (i.getCourseDescriptor()==courseName){retVal=i; break;} }
         return retVal;
     }
 }

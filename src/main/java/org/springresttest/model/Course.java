@@ -1,8 +1,6 @@
 package org.springresttest.model;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Course {
 
     private int courseId;
