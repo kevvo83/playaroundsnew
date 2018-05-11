@@ -9,5 +9,8 @@
         <module name="playarounds" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="playarounds" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
